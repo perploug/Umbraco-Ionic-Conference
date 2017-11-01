@@ -20,8 +20,8 @@ export class ConferenceData {
   constructor(public http: Http, public user: UserData) {
     this.siteConfiguration = {
       host: "http://localhost:8100",
-      username: "pph@umbraco.dk",
-      password: "farmer1234"
+      username: "per+api@plo.ug",
+      password: "secretsecret"
     };
   }
 
