@@ -1,14 +1,17 @@
 $categories: (
- ionic: color($colors, primary),
- angular: #AC282B,
- communication: #8E8D93,
- tooling: #FE4C52,
- services: #FD8B2D,
- design: #FED035,
- workshop: #69BB7B,
- food: #3BC7C4,
- documentation: #B16BE3,
- navigation: #6600CC,
+  ionic: color($colors, primary),
+  angular: #ac282b,
+  communication: #8e8d93,
+  tooling: #fe4c52,
+  services: #fd8b2d,
+  design: #fed035,
+  workshop: #69bb7b,
+  food: #3bc7c4,
+  documentation: hsl(275, 68%, 65%),
+  navigation: #6600cc,
+  developers: #fe4c52,
+  business: #6600cc,
+  creative: #69bb7b
 );
 
 @function auxiliary-categories() {
@@ -17,9 +20,9 @@ $categories: (
 
 page-schedule {
   @each $track, $value in auxiliary-categories() {
-   ion-item-sliding[track=#{$track}] ion-label {
-     border-left: 2px solid $value;
-     padding-left: 10px;
-   }
+    ion-item-sliding[track="#{$track}"] ion-label {
+      border-left: 2px solid $value;
+      padding-left: 10px;
+    }
   }
 }
