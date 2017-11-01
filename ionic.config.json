@@ -1,0 +1,15 @@
+{
+  "name": "ionic-conference-app",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  },
+
+  "proxies": [
+    {
+      "path": "/umbraco/rest",
+      "proxyUrl": "https://coatgarden18-com.s1.umbraco.io/umbraco/rest"
+    }
+  ]
+}
