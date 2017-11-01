@@ -34,7 +34,6 @@ export class ConferenceData {
   }
 
   async loadUmbracoData(): Promise<any> {
-    var self = this;
     var umbracoClient = new umbraco.client();
     await umbracoClient.connect(this.siteConfiguration);
 
